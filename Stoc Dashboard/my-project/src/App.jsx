@@ -3,12 +3,14 @@ import NavBar from "./Components/Navbar";
 import Overview from "./Components/overview";
 import SectorPerformance from "./Components/sectorPerformance";
 import MarketList from "./Components/marketList";
-
 const App = () => {
   return (
+    
     <div className="flex">
+
+      
       <Sidebar />
-      <div className="flex-1">
+      <div className="pl-16">
         <NavBar />
 
         {/* First main section with Overview and SectorPerformance */}

@@ -3,51 +3,73 @@ import { FaSearch } from "react-icons/fa";
 import { IoMdBook } from "react-icons/io";
 import { BsBookmarkDash } from "react-icons/bs";
 import { RiSettingsLine } from "react-icons/ri";
+import { BiLogoFlutter } from "react-icons/bi";
 
 const Sidebar = () => {
   return (
-    <aside className="bg-black w-20 min-h-screen border-r border-gray-800 flex flex-col justify-center items-center">
-      <nav className="p-4 flex flex-col items-center gap-11 ">
+    <aside className="fixed top-0 left-0 bg-black w-16 h-full border-r border-gray-800 flex flex-col justify-center">
+      {/* Logo at the top */}
+      <div className="flex items-center justify-center w-16 h-16 mb-4">
+        <BiLogoFlutter className="text-white text-2xl" />
+      </div>
+
+      {/* Menu items */}
+      <div className="p-4 flex flex-col items-center gap-11">
+        {/* Home Icon */}
         <ul className="flex flex-col items-center size-2">
           <li>
-            <a href="#">
-              <IoHomeOutline className="text-gray-600 text-2xl" />
+            <a href="#" className="group">
+              <div className="flex items-center justify-center border-r border-transparent group-hover:border-r-blue-700 w-16 h-16">
+                <IoHomeOutline className="text-gray-600 text-2xl group-hover:text-blue-700" />
+              </div>
             </a>
           </li>
         </ul>
 
-        <ul className="flex flex-col items-center space-y-2 size-2">
+        {/* Search Icon */}
+        <ul className="flex flex-col items-center size-2">
           <li>
-            <a href="#">
-              <FaSearch className="text-gray-600 text-2xl" />
+            <a href="#" className="group">
+              <div className="flex items-center justify-center border-r border-transparent group-hover:border-r-blue-700 w-16 h-16">
+                <FaSearch className="text-gray-600 text-2xl group-hover:text-blue-700" />
+              </div>
             </a>
           </li>
         </ul>
 
-        <ul className="flex flex-col items-center space-y-2 size-2">
+        {/* Book Icon */}
+        <ul className="flex flex-col items-center size-2">
           <li>
-            <a href="#">
-              <IoMdBook className="text-gray-600 text-2xl" />
+            <a href="#" className="group">
+              <div className="flex items-center justify-center border-r border-transparent group-hover:border-r-blue-700 w-16 h-16">
+                <IoMdBook className="text-gray-600 text-2xl group-hover:text-blue-700" />
+              </div>
             </a>
           </li>
         </ul>
 
-        <ul className="flex flex-col items-center space-y-2 size-2">
+        {/* Bookmark Icon */}
+        <ul className="flex flex-col items-center size-2">
           <li>
-            <a href="#">
-              <BsBookmarkDash className="text-gray-600 text-2xl" />
+            <a href="#" className="group">
+              <div className="flex items-center justify-center border-r border-transparent group-hover:border-r-blue-700 w-16 h-16">
+                <BsBookmarkDash className="text-gray-600 text-2xl group-hover:text-blue-700" />
+              </div>
             </a>
           </li>
         </ul>
 
-        <ul className="flex flex-col items-center space-y-2 size-2">
+        {/* Settings Icon */}
+        <ul className="flex flex-col items-center size-2">
           <li>
-            <a href="#">
-              <RiSettingsLine className="text-gray-600 text-2xl" />
+            <a href="#" className="group">
+              <div className="flex items-center justify-center border-r border-transparent group-hover:border-r-blue-700 w-16 h-16">
+                <RiSettingsLine className="text-gray-600 text-2xl group-hover:text-blue-700" />
+              </div>
             </a>
           </li>
         </ul>
-      </nav>
+      </div>
     </aside>
   );
 };
