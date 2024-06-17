@@ -16,8 +16,8 @@ To install and run the project locally, follow these steps:
 ### STEP 1: Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/your-project.git
-cd your-project
+git clone https://github.com/rancfnds/Stock-dashboard.git
+
 npm install
 npm start
 ```
